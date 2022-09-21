@@ -2,6 +2,7 @@
   <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''">
     <main>
       <div class="search-box">
+        <h2 class="head_h2"><span class="we">We</span>ather</h2>
         <input 
           type="text" 
           class="search-bar" 
@@ -167,5 +168,19 @@ main {
   font-weight: 700;
   font-style: italic;
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+.head_h2{
+  color: #FFF;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 20px;
+  font-weight:bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+.we{
+  color: orange;
 }
 </style>
